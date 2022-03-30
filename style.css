@@ -18,9 +18,37 @@ body {
     display: flex;
 }
 
+.banner-bar {
+    width: 100%;
+}
+
 .nav-bar {
     background: rgba(255, 255, 255, 0.1);
     width: 100%;
     height: 100px;
     backdrop-filter: blur(0.03rem); /*blurs the background*/
 }
+
+/* Progress Bar
+.progress-container {
+    height: 23px;
+    background-color: grey;
+    position: relative;
+    border-radius: 6px ;
+}
+
+.progress-container .progress-bar {
+    position: absolute;
+    height: 100%;
+    background-color: red;
+    border-radius: 6px;
+}
+
+#play-animation {
+    animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation {
+    0% { width: 0%;}
+    100% { width: 100%;} /*bar will fill up the width of the container by the end of the video.*/
+} */
