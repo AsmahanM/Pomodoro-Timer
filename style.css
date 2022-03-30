@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    /* background-color: #ebd5ca; */
+    background-image: url(https://wallpaperaccess.com/full/84248.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
