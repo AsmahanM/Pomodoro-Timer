@@ -6,23 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
-    <title>Pomodoro Timer</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200;500&family=Patrick+Hand&family=Secular+One&display=swap" rel="stylesheet"></head>
 <body>
+    <div class="banner-bar">
+        <nav class="nav-bar">
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <button onclick="study()">Study</button> <br>
+            
+            <h1 class="heading">Let's get to work!</h1>
+        </nav>
+        </div>
 
-<div class="banner-bar">
-<nav class="nav-bar">TEST
-    
-    <!-- <div class="progress-container">
-        <div class="progress-bar"></div>
-    </div>
-
-    <button onclick="play()">Play</button> <br> -->
-
-</nav>
-</div>
+    <div id="pomodoro-app">
+        <div id="container">
+          <div id="timer">
+            <div id="time">
+              <span id="minutes">25</span>
+              <span id="colon">:</span>
+              <span id="seconds">00</span>
+            </div>
+            <div id="filler"></div>
+          </div>
+      
+          <div id="buttons">
+            <button id="work">Work</button>
+            <button id="shortBreak">Short Break</button>
+            <button id="longBreak">Long Break</button>
+            <button id="stop">Stop</button>
+          </div>
+        </div>
+      </div>
 
     <link rel="stylesheet" href="script.js">
 </body>
-<link rel="stylesheet" href="script.js">
 </html>
