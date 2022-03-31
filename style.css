@@ -4,7 +4,8 @@
     --white: #f4f1de;
     --midnight-blue: #00346b;
     --purple: #390a70;
-    --sunset-orange: #ff8500;
+    --pastel-orange: #ffcfd2;
+    --lavendar: #cdb4db;
 }
 
 body {
@@ -16,32 +17,42 @@ body {
     background-attachment: fixed;
     overflow: hidden;
     display: flex;
+    font-family:'Manrope', sans-serif;
+    color: var(--midnight-blue);
 }
 
 .banner-bar {
     width: 100%;
+    position: fixed;
+    height: 50px;
+}
+
+.heading {
+    display: flex;
+    padding-left: 35%;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-family: 'Patrick Hand', cursive;
+    color: var(--white);
 }
 
 .nav-bar {
     background: rgba(255, 255, 255, 0.1);
     width: 100%;
-    height: 100px;
+    height: 200px;
     backdrop-filter: blur(0.03rem); /*blurs the background*/
 }
 
-/* Progress Bar
+/*Progress Bar*/
 .progress-container {
-    height: 23px;
-    background-color: grey;
-    position: relative;
-    border-radius: 6px ;
+    height: 20px;
+    background-color: var(--white);
 }
 
 .progress-container .progress-bar {
-    position: absolute;
+    position: fixed;
     height: 100%;
-    background-color: red;
-    border-radius: 6px;
+    background-color: var(--purple);
 }
 
 #play-animation {
@@ -51,4 +62,76 @@ body {
 @keyframes progress-animation {
     0% { width: 0%;}
     100% { width: 100%;} /*bar will fill up the width of the container by the end of the video.*/
-} */
+} 
+
+
+#pomodoro-app {
+padding-top: 20%;
+padding-left: 30%;
+}
+
+#container{
+    border:5px blur(0.03rem) rgba(255, 255, 255, 0.1);;
+    width:400px;
+    margin:20px auto;
+    text-align:center;
+    background : rgba(255, 255, 255, 0.1);;
+    backdrop-filter: blur(0.03rem);
+    position: relative;
+    padding: 5px;
+    
+  }
+  
+  #timer{ 
+    color: var(--midnight-blue); 
+    font-size:50px; 
+    margin:10px auto;
+    border : 5px solid var(--white);
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+   
+    cursor:default;
+  }
+  
+  #time{
+    margin-top:70px;
+    z-index : 1;
+    position:relative;
+  }
+  
+  #filler{
+    background : #ddffcc;
+    height: 0px;
+    width: 200px;
+    position:absolute;
+    bottom:0;
+  }
+  
+  #buttons button { 
+    background: var(--lavendar); 
+    border:none; 
+    color:var(--midnight-blue); 
+    cursor:pointer; 
+    padding:5px; 
+    width:90px; 
+    margin:10px auto;
+    font-size:14px;
+    height : 50px;
+    border-radius : 50px;
+  }
+  
+  #buttons button#shortBreak{
+    background : var(--pastel-pink);
+  }
+  
+  #buttons button#longBreak{
+    background : var(--mint-green);
+  }
+  
+  #buttons button#stop{
+    background : var(--pastel-orange);
+  }
+  
